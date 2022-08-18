@@ -1,8 +1,10 @@
 import './style.css';
 
 window.onload = () => {
-  document.querySelector('.card ').classList.add(generateRandomSuit());
-  document.querySelector('.cardNumber').innerHTML = generateRandomNumber();
+  document.getElementById('card').classList.remove("card club");
+  document.getElementById('card').classList.add(`card ${generateRandomSuit()}`);
+
+  document.getElementById("cardNum").innerHTML = generateRandomNumber();
 };
 
 let generateRandomNumber = () => {
