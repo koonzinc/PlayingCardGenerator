@@ -1,11 +1,3 @@
-import './style.css';
-
-window.onload = () => {
-  document.getElementById('card').classList.remove("card club");
-  document.getElementById('card').classList.add(`card ${generateRandomSuit()}`);
-
-  document.getElementById("cardNum").innerHTML = generateRandomNumber();
-};
 
 let generateRandomNumber = () => {
   let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
@@ -20,3 +12,10 @@ let generateRandomSuit = () => {
 
   return suit[suitIndex];
 }
+
+window.onload = () => {
+    document.querySelector('.card').classList.remove('spade');
+    document.querySelector('.card').classList.add(generateRandomSuit());
+    document.querySelector('.cardNumber').innerHTML = generateRandomNumber();
+  
+};
