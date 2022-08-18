@@ -1,7 +1,7 @@
 import "./style.css";
 
 window.onload = function() {
-  document.querySelector('.card ').classList.add(generateRandomSuit);
+  document.querySelector('.card').classList.add(generateRandomSuit);
   document.querySelector('.cardNumber').innerHTML = (generateRandomNumber);
 };
 
