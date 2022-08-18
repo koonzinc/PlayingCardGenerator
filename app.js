@@ -1,8 +1,8 @@
-import "./style.css";
+import './style.css';
 
-window.onload = function() {
-  document.querySelector('.card').classList.add(generateRandomSuit);
-  document.querySelector('.cardNumber').innerHTML = (generateRandomNumber);
+window.onload = () => {
+  document.querySelector('.card ').classList.add(generateRandomSuit());
+  document.querySelector('.cardNumber').innerHTML = generateRandomNumber();
 };
 
 let generateRandomNumber = () => {
