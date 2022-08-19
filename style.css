@@ -41,3 +41,9 @@ body {
     content: '\2666'; 
     color: red;
 }
+
+h1 {
+    font-size: 16px;
+    text-align: center;
+    font-family: monospace;
+}
